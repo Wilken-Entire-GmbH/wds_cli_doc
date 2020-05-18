@@ -270,7 +270,7 @@ Options:
   -r, --retrieve               retrieve search values from fulltext (default: false)
   -u, --viewer                 determine viewer for visualization (default: false)
   --stdin                      read query argument from stdin (default: false)
-  -o, --output <outputformat>  output format (json|ndjson|csv|table|id) (default: "id")
+  -o, --output <outputformat>  output format (json|ndjson|csv|yaml|table|id) (default: "id")
   -h, --help                   display help for command
 ```
 
