@@ -60,7 +60,7 @@ Commands:
 ## Installation und Verbindungsparameter
 Das *wdscli* besteht aus einer ausführbaren Datei und wird für P5 DMS Versionen <= 1.0.4 unter */usr/bin* installiert. Für alle neueren Versionen befindet sich die Datei unter $WDS_ROOT/bin. Die Verwendung von *--host*/*--port* ist nicht notwendig, da über die Serverkonfiguration die Verbindungsparameter automatisch ermittelt werden.
 
-Die Ermittlung ist versionabhängig:
+Die Ermittlung ist versionsabhängig:
 
 P5 DMS Version | Ermittlung über
 -|-
@@ -71,7 +71,7 @@ P5 DMS Version | Ermittlung über
 Auf allen Systemen ohne P5 DMS Installation kann die Datei nach eigener Wahl abgelegt werden. Zur Herstellung der Verbindung zum DMS Server sind die Verbindungsoptionen *--host*/*--port* dann initial zwingend. Beim ersten Aufruf wird unter dem Heimatverzeichnis des Benuters die Datei *.wdscli.rc* angelegt und die Werte eingetragen. Für jeden weiteren Aufruf werden die Verbindungsparameter aus dieser Datei gezogen. Bei Bedarf oder falsch eingebenen Parametern, werden die Verbindungsparameter einfach erneut eingegeben und dadurch in der *.wdscli.rc* überschrieben.
 
 ### Hilfe
-Über die Optionen *-h* und *--help* oder dem Kommando `help` wird der Hilfetext ausgegeben. Durch Kombination dieser Optionen mit einem Kommando wird die Hilfe für das jeweilige Kommando ausgeben.
+Über die Optionen *-h* und *--help* oder dem Befehl `help` wird der Hilfetext ausgegeben. Durch Kombination dieser Optionen mit einem Befehl wird die Hilfe für den jeweiligen Befehl ausgegeben.
 
 Beispiel für `get`:
 ```console
@@ -124,7 +124,7 @@ Das Ergebnis für alle drei Eingaben:
 ## Verkettung von Befehlen
 Ein wesentliches Konzept von Windows- und Unixshells sind [Pipes](https://de.wikipedia.org/wiki/Pipe_(Informatik)). Befehle werden dabei auf Shell Ebene über das Pipe Symbol *'|'* miteinander verkettet.
 
-Dabei führen einzelne Befehle spezialisierte Aufgaben aus und geben das Kommando an den nächsten Befehl weiter.
+Dabei führen einzelne Befehle spezialisierte Aufgaben aus und geben die Ausgabe als Eingabe für den nächsten Befehl weiter.
 
 Damit *wdscli* Befehle die Eingabe aus *stdin* entgegen nehmen, muss die Option *--stdin* verwendet werden. Ansonsten wird die Eingabe als Parameter am Ende des Befehls erwartet.
 
@@ -222,7 +222,7 @@ $ wdscli search -c "id name createdate" -o ndjson "objectType nin ['Document']"
 ```
 
 ### yaml
-Die Ausgabe erfolt im [*YAML* Format](https://de.wikipedia.org/wiki/YAML). *YAML* ist das für Menschen am besten lesbare Format und wird im P5 DMS als Standardformat für alle Konfigurationsdateien verwendet.
+Die Ausgabe erfolgt im [*YAML* Format](https://de.wikipedia.org/wiki/YAML). *YAML* ist das für Menschen am besten lesbare Format und wird im P5 DMS als Standardformat für alle Konfigurationsdateien verwendet.
 
 ```console
 $ wdscli search -c "id name createdate" -o yaml "objectType nin ['Document']"
@@ -238,7 +238,7 @@ $ wdscli search -c "id name createdate" -o yaml "objectType nin ['Document']"
 ```
 
 ### table
-Die Ausgabe erfolt im *TABLE* Format. Diese Format ist für Listenausgaben in einer Shell optimiert.
+Die Ausgabe erfolgt im *TABLE* Format. Diese Format ist für Listenausgaben in einer Shell optimiert.
 
 ```console
 $ wdscli search -c "id name createdate" -o table "objectType nin ['Document']"
@@ -258,7 +258,7 @@ Der *search* Befehl ermöglicht Suchanfragen auf das Archiv. Die Suche wird übe
 $ wdscli search --help
 Usage: wdscli search [options] [query...]
 
-search for wds retrieval items. if wether [query] nor -s option is set <objectType eq "Documents"> will be executed.
+search for wds retrieval items.
 
 Options:
   -l, --limit <count>          limit result set size, -1 for all (default: 10)
@@ -336,7 +336,7 @@ Options:
 Die Parameter werden aus *stdin* gelesen. Diese Option ist bei der [Verkettung von Befehlen](#verkettung-von-befehlen) zwingend erforderlich.
 
 * *-i, --input \<inputformat>*<br>
-Legt das Eingabeformat fest. Siehe[Formate](*formate).
+Legt das Eingabeformat fest. Siehe [Formate](*formate).
 
 * *-o, --output \<outputformat>*<br>
 Legt das Ausgabeformat fest. Siehe [Formate](*formate*)
@@ -345,7 +345,7 @@ Legt das Ausgabeformat fest. Siehe [Formate](*formate*)
 Über *--type* wird der zu ermittelnde Objekttyp festgelegt. Bei Parameterübergabe ist diese Option zwingend erforderlich. Bei Verwendung von *--stdin* wird *objectType* über *stdin* gelesen.
 
 * *-n, --byname*<br>
-Für Dokumente. Referenzen von Classifier, Provider und Pool werden mit dem *name* angezeigt. Die Voreinstellung ist *id*
+Für Dokumente. Referenzen von Classifier, Provider und Pool werden mit dem *name* angezeigt. Die Voreinstellung ist *id*.
 
 ## Inhalte herunterladen
 Der *getContent* Befehl speichert den Inhalt eines Archivdokuments in eine Datei. Über die *--loc* wird das Verzeichnis für die Speicherung festgelegt. Die Dokumentenid wird entweder als Parameter übergeben oder bei Verwendung von *--stdin* aus *stdin* gelesen. Da nur Dokumente einen Inhalt besitzen ist die Angabe des Objektyps nicht nötig. 
@@ -372,7 +372,7 @@ Options:
 Die Parameter werden aus *stdin* gelesen. Diese Option ist bei der [Verkettung von Befehlen](#verkettung-von-befehlen) zwingend erforderlich.
 
 * *-i, --input \<inputformat>*<br>
-Legt das Eingabeformat fest. Siehe[Formate](*formate).
+Legt das Eingabeformat fest. Siehe [Formate](*formate).
 
 * *-l, --loc \<location>*<br>
 Legt das Ausgabeverzeichnis fest. Das Ausgabeverzeichnis wird nicht automatisch angelegt.
