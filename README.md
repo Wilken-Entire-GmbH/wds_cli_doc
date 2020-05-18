@@ -4,7 +4,7 @@ Das *P5 DMS Command Line Interface* kurz *wdscli*, ist  ein kommandzeilenorienti
 
 # Praxisbeispiele anhand der XRechnungsverarbeitung
 ## Rechnungen auflisten 
-* [Die letzten 10 mit einer Belegnummer versehenen XRechnungen auflisten.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list01.sh)
+* [Die letzten 10 mit einer Belegnummer versehenen XRechnungen auflisten.](xinv/list01.sh)
 * [Alle in der CSE noch nicht bearbeitete XRechnungen anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list02.sh)
 * [Alle XRechnungen ohne erfolgte Übergabe in die CSE.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list03.sh)
 * [Die importierten XML Dateien der letzen 10 Rechnungen anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list04.sh)
