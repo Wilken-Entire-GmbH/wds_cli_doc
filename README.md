@@ -5,15 +5,19 @@ Das *P5 DMS Command Line Interface* kurz *wdscli*, ist  ein kommandzeilenorienti
 # Praxisbeispiele anhand der XRechnungsverarbeitung
 ## Rechnungen auflisten 
 * [Die letzten 10 mit einer Belegnummer versehenen XRechnungen auflisten.](xinv/list01.sh)
-* [Alle in der CSE noch nicht bearbeitete XRechnungen anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list02.sh)
-* [Alle XRechnungen ohne erfolgte Übergabe in die CSE.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list03.sh)
-* [Die importierten XML Dateien der letzen 10 Rechnungen anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list04.sh)
+* [Alle in der CSE noch nicht bearbeitete XRechnungen anzeigen.](xinv/list02.sh)
+* [Alle XRechnungen ohne erfolgte Übergabe in die CSE.](xinv/list03.sh)
+* [Die importierten XML Dateien der letzen 10 Rechnungen anzeigen.](xinv/list04.sh)
 ## Metadaten anzeigen
-* [Konfigurationsobjekte der XRechnung anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/showconfig.sh)
-* [Metadaten der letzten XRechnung anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/showlast.sh)
+* [Konfigurationsobjekte der XRechnung anzeigen.](xinv/showconfig.sh)
+* [Metadaten der letzten XRechnung anzeigen.](xinv/showlast.sh)
 ## Rechnungsinhalte exportieren
-* [Die XML-Dateien der letzten 3 XRechnungen exportieren.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/contentxml.sh)
-* [Das Rechnungs-PDF der letzen 3 XRechungen mit der Belegnummer als Dateinamen exportieren.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/contentbooked.sh)
+* [Die XML-Dateien der letzten 3 XRechnungen exportieren.](xinv/contentxml.sh)
+* [Das Rechnungs-PDF der letzen 3 XRechungen mit der Belegnummer als Dateinamen exportieren.](xinv/contentbooked.sh)
+
+
+---------------------------------------------------------------------
+
 
 - [P5 DMS Command Line Interface](P5-DMS-Command-Line-Interface)
   - [Global](#global)
