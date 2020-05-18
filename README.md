@@ -2,6 +2,19 @@
 
 Das *P5 DMS Command Line Interface* kurz *wdscli*, ist  ein kommandzeilenorientieres Werkzeug zur Ausführung von Operationen in Verbindung mit dem P5 DMS auf Shellebene.  Komplexe Operationen sind durch die Aneinanderkettung der Befehle und in Kombination mit anderen Kommandozeilen Werkzeugen realisierbar. Systemadministratoren ermöglicht es auf einfache Art und Weise DMS Inhalte zu ermitteln, zu visualisieren und weiter zu verarbeiten.
 
+# Praxisbeispiele anhand der XRechnungsverarbeitung
+## Rechnungen auflisten 
+* [Die letzten 10 mit einer Belegnummer versehenen XRechnungen auflisten.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list01.sh)
+* [Alle in der CSE noch nicht bearbeitete XRechnungen anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list02.sh)
+* [Alle XRechnungen ohne erfolgte Übergabe in die CSE.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list03.sh)
+* [Die importierten XML Dateien der letzen 10 Rechnungen anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/list04.sh)
+## Metadaten anzeigen
+* [Konfigurationsobjekte der XRechnung anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/showconfig.sh)
+* [Metadaten der letzten XRechnung anzeigen.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/showlast.sh)
+## Rechnungsinhalte exportieren
+* [Die XML-Dateien der letzten 3 XRechnungen exportieren.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/contentxml.sh)
+* [Das Rechnungs-PDF der letzen 3 XRechungen mit der Belegnummer als Dateinamen exportieren.](https://github.com/wilken-entire-gmbh/wds_cli_doc/xinv/contentbooked.sh)
+
 - [P5 DMS Command Line Interface](P5-DMS-Command-Line-Interface)
   - [Global](#global)
   - [Installation und Verbindungsparameter](#installation-und-verbindungsparameter)
@@ -366,3 +379,4 @@ Beispiel: Dateinamen aus id und ursprünglichem Namen, getrennt durch einen Bind
 
 * *-t, --test*<br>
 Durch *--test* erfolgt der Download ohne Speicherung. In Verbindung mit *--verbose* wird so das Herunterladen an den festgelegten Ort simuliert.
+
