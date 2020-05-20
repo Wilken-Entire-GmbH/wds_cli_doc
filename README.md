@@ -280,7 +280,7 @@ Options:
 Die Parameter werden aus *stdin* gelesen. Diese Option ist bei der [Verkettung von Befehlen](#verkettung-von-befehlen) zwingend erforderlich.
 
 * *-o, --output \<format>*<br>
-Legt das Ausgabeformat fest. Siehe [Formate](*formate*)
+Legt das Ausgabeformat fest. Siehe [Formate](#formate)
 
 * *-l, --limit \<count>* <br>
 Limitiert die Ergebnismenge auf *\<count>* Zeilen. Bei einem Wert von -1 ist die Zeilenanzahl nur von der Anfrage abhängig. Die Voreinstellung ist 10.
@@ -336,10 +336,10 @@ Options:
 Die Parameter werden aus *stdin* gelesen. Diese Option ist bei der [Verkettung von Befehlen](#verkettung-von-befehlen) zwingend erforderlich.
 
 * *-i, --input \<inputformat>*<br>
-Legt das Eingabeformat fest. Siehe [Formate](*formate).
+Legt das Eingabeformat fest. Siehe [Formate](#formate).
 
 * *-o, --output \<outputformat>*<br>
-Legt das Ausgabeformat fest. Siehe [Formate](*formate*)
+Legt das Ausgabeformat fest. Siehe [Formate](#formate)
 
 * *-t, --type \<objectype>*<br>
 Über *--type* wird der zu ermittelnde Objekttyp festgelegt. Bei Parameterübergabe ist diese Option zwingend erforderlich. Bei Verwendung von *--stdin* wird *objectType* über *stdin* gelesen.
@@ -372,7 +372,7 @@ Options:
 Die Parameter werden aus *stdin* gelesen. Diese Option ist bei der [Verkettung von Befehlen](#verkettung-von-befehlen) zwingend erforderlich.
 
 * *-i, --input \<inputformat>*<br>
-Legt das Eingabeformat fest. Siehe [Formate](*formate).
+Legt das Eingabeformat fest. Siehe [Formate](#formate).
 
 * *-l, --loc \<location>*<br>
 Legt das Ausgabeverzeichnis fest. Das Ausgabeverzeichnis wird nicht automatisch angelegt.
