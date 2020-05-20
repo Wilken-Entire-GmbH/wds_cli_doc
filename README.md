@@ -289,13 +289,13 @@ Limitiert die Ergebnismenge auf *\<count>* Zeilen. Bei einem Wert von -1 ist die
 Spaltenauswahl. \<columns> besteht aus einer Aneinanderreihung von Feldnamen durch Leerzeichen getrennt. Die Voreinstellung wird beim Aufruf von *search --help* angezeigt. Bei Kombination mit dem *id* Format wird diese Option ignoriert.
 
 * *-s, --sort \<columns>*<br>
-Sortierreihenfolge. *\<columns>* besteht aus einer Aneinanderreihung von Feldnamen durch Leerzeichen getrennt. Die Voreinstellung pro Feld ist aufsteigend. Durch Angabe eines '-' vor dem Feldnamen wird die Sortierreihenfolger für das folgende Feld auf absteigend umgestellt. Die Voreinstellung wird beim Aufruf von *search --help* angezeigt.
+Sortierreihenfolge. *\<columns>* besteht aus einer Aneinanderreihung von Feldnamen durch Leerzeichen getrennt. Die Voreinstellung pro Feld ist aufsteigend. Durch Angabe eines '-' vor dem Feldnamen wird die Sortierreihenfolge für das folgende Feld auf absteigend umgestellt. Die Voreinstellung wird beim Aufruf von *search --help* angezeigt.
 
 * *-k, --keys*<br>
 Fügt der Spaltenauswahl *id* und *objectType* hinzu.
 
 * *-a, --all*<br>
-Aktiviert die Suche über alle Versionen eines Dokumentes. Suchanfragen werden normalerweise nur auf die letzte Version eines Dokumentes ausgeführt. Durch Verwendung dieser Option erfolgt die Suche über alle Versionen.
+Aktiviert die Suche über alle Versionen eines Dokuments. Suchanfragen werden normalerweise nur auf die letzte Version eines Dokuments ausgeführt. Durch Verwendung dieser Option erfolgt die Suche über alle Versionen.
 
 * *-n, --byname*<br>
 Für Dokumente. Referenzen von Classifier, Provider und Pool werden mit dem *name* angezeigt. Die Voreinstellung ist *id*
@@ -312,7 +312,7 @@ Der *get* Befehl dient zur Ermittlung der Metadaten von Dokumenten und P5 DMS Ko
 Metadaten sind unterteilt in zwei Gruppen:
 
 * **Systemdaten**<br>
-Systemdaten beinhalten Informationen wie die Id, den Objektyp, das Anlagedatum oder den Status eines Dokumentes. Diese Informationen sind auf der obersten Ebene verfügbar
+Systemdaten beinhalten Informationen wie die Id, den Objektyp, das Anlagedatum oder den Status eines Dokuments. Diese Informationen sind auf der obersten Ebene verfügbar
 
 * **Anwendungsdaten**<br>
 Anwendungsdaten werden während der Verarbeitung erzeugt. Diese Daten beinhalten z.B. Informationen über Import oder Übergabedaten an die Finanzbuchhaltung. Alle Anwendungsdaten sind unter dem Tag *data* verfügbar. 
