@@ -35,6 +35,8 @@ Das *P5 DMS Command Line Interface* kurz *wdscli*, ist  ein kommandzeilenorienti
     - [Ermittlungsoptionen](#ermittlungsoptionen)
   - [Inhalte herunterladen](#inhalte-herunterladen)
     - [Downloadoptionen](#downloadoptionen)
+  - [Kennwörter verschlüsseln](#kennwörter-verschlüsseln)
+    - [Verschlüsselungsoptionen](#verschlüsselungsoptionen)
 
 # Globale Optionen
 ```console
