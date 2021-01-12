@@ -384,3 +384,35 @@ Beispiel: Dateinamen aus id und ursprünglichem Namen, getrennt durch einen Bind
 * *-t, --test*<br>
 Durch *--test* erfolgt der Download ohne Speicherung. In Verbindung mit *--verbose* wird so das Herunterladen an den festgelegten Ort simuliert.
 
+## Kennwörter verschlüsseln
+Der *encrypt* Befehl verschlüsselt Zeichenketten im *aes-192-cbc* Format. Dies wird in der P5 DMS Konfiguration für die Verschlüsselung externer Kennwörter, z.B. für die E-Mail Integration, benötigt.
+
+Für die Ein- und Ausgabeformate steht zusätzlich der Typ *text* zur Verfügung. *text* dient zur zeilenweisen Ein- und Ausgabe von Kennwörtern und ist das default Ein- und Ausgabeformat.
+
+```console
+$ wdscli encrypt --help
+Usage: wdscli encrypt [options] [text...]
+
+encrypt data for usage in p5dms configuration
+
+Options:
+  --stdin                      read input from stdin (default: false)
+  -i, --input <inputformat>    input format from stdin (json|ndjson|csv|text) (default: "text")
+  -o, --output <outputformat>  output format (json|yaml|ndjson|yaml|table|text) (default: "text")
+  -e, --echo                   add unencrypted string to output (default: false)
+  -h, --help                   display help for command
+```
+
+### Verschlüsselungsoptionen
+* *--stdin*<br>
+Die Parameter werden aus *stdin* gelesen. Diese Option ist bei der [Verkettung von Befehlen](#verkettung-von-befehlen) zwingend erforderlich.
+
+* *-i, --input \<inputformat>*<br>
+Legt das Eingabeformat fest. Siehe [Formate](#formate).
+
+* *-o, --output \<outputformat>*<br>
+Legt das Ausgabeformat fest. Siehe [Formate](#formate).
+
+* *-e, --echo*<br>
+Neben dem verschlüsselten Kennwort wird das unverschlüsselte Kennwort mit ausgegeben.
+
